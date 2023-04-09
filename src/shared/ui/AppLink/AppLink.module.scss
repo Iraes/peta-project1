@@ -1,0 +1,8 @@
+.AppLink {
+  font-weight: 500;
+  color: var(--link-color);
+
+  &:hover {
+    color: var(--link-color-hover);
+  }
+}
