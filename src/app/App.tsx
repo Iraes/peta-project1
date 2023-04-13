@@ -1,17 +1,22 @@
 import './styles/index.scss'
-import { useTheme } from "app/providers/ThemeProvider";
+import { useTheme, AppRouter } from "app/providers";
 import { classNames } from "shared/lib/classNames/classNames";
-import {AppRouter} from "app/providers/router";
-import {NavBar} from "widgets/NavBar";
+import { NavBar, Sidebar} from "widgets";
+import { Suspense } from 'react';
 
 const App = () => {
-  const { theme, toggleTheme } = useTheme();
+  const { theme } = useTheme();
+
 
   return (
     <div className={classNames('app', {}, [theme])}>
-      <NavBar />
-      <AppRouter />
-      <button onClick={toggleTheme}> Сменить тему</button>
+      <Suspense fallback=''>
+        <NavBar />
+        <div className='content-page'>
+          <Sidebar />
+          <AppRouter />
+        </div>
+      </Suspense>
     </div>
   );
 };
