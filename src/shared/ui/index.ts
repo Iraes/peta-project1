@@ -1,2 +1,1 @@
-export * from "./AppLink/AppLink";
-
+export * from './AppLink/AppLink';
