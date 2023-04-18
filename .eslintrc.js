@@ -2,10 +2,12 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
+    jest: true,
   },
   extends: [
     'plugin:react/recommended',
     'airbnb',
+    'plugin:i18next/recommended',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -18,6 +20,7 @@ module.exports = {
   plugins: [
     'react',
     '@typescript-eslint',
+    'i18next',
   ],
   rules: {
     // Точка с запятой в конце
@@ -124,7 +127,7 @@ module.exports = {
     'react/function-component-definition': 'off',
     // Выводить предупреждение на использование индекса массива в key
     'react/no-array-index-key': 'warn',
-
+    'i18next/no-literal-string': ['error', { markupOnly: true }],
   },
   /**
    * Объявление глобальных переменных для линта,

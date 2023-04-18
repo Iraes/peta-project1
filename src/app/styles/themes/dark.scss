@@ -1,11 +1,9 @@
-.app.dark{
-  --bg-color-main: #0A1F32;
-  --bg-color-second: #2D384A;
-
-  --primary-color: #FF4C2B;
+.app.dark {
+  --bg-color-main: #0a1f32;
+  --bg-color-second: #2d384a;
+  --primary-color: #ff4c2b;
   --secondary-color: #6f9db9;
-
-  --color-text-main: #D2D2D2;
-  --link-color: rgba(255, 43, 131, .75);
+  --color-text-main: #d2d2d2;
+  --link-color: rgb(255 43 131 / 75%);
   --link-color-hover: #ff2b83;
 }

@@ -1,12 +1,20 @@
 :root {
   // Шрифты
-  --font-family-main: Roboto, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
-  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-
+  --font-family-main:
+    roboto,
+    "Segoe UI",
+    "Helvetica Neue",
+    arial,
+    "Noto Sans",
+    "Liberation Sans",
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Noto Color Emoji";
   --font-size-m: 16px;
   --font-line-m: 24px;
   --font-m: var(--font-size-m) / var(--font-line-m) var(--font-family-main);
-
   --font-size-l: 24px;
   --font-line-l: 32px;
   --font-l: var(--font-size-l) / var(--font-line-l) var(--font-family-main);
@@ -15,13 +23,15 @@
   --navbar-height: 50px;
   --sidebar-width: 300px;
   --sidebar-width-collapsed: 80px;
-
 }
 
-h1,h2 {
+h1,
+h2 {
   color: var(--primary-color);
 }
 
-h3,h4,h5  {
-  color: var(--secondary-color)
+h3,
+h4,
+h5 {
+  color: var(--secondary-color);
 }

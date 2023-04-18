@@ -1,18 +1,14 @@
 .NavBar {
   display: flex;
   align-items: center;
-
   padding: 20px;
-
   width: 100%;
   height: var(--navbar-height);
-
   background-color: var(--bg-color-second);
 }
 
 .links {
   display: flex;
   gap: 20px;
-
   margin-left: auto;
 }
